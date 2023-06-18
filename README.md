@@ -1,8 +1,15 @@
 # Task-3_MaRS_EC22B1111
   Om Ajit Kinage
 
+
+
+
 INTRODUCTION:-
-  This is a Arduino Project for Transmitter-Receiver using a RW-630 as a Transmitter    and RW-54 as a Receiver. It is to check if the message transmitted by the RW-630 is   received by RW-54 with the help of Arduino and LED.
+
+This is a Arduino Project for Transmitter-Receiver using a RW-630 as a Transmitter    and RW-54 as a Receiver. It is to check if the message transmitted by the RW-630 is   received by RW-54 with the help of Arduino and LED.
+
+
+
 
 PSEUDO CODE:-
 
@@ -53,6 +60,8 @@ B)*TRANSMITTER*:
 
 
 
+
+
 PROCEDURE:
 
 A) Learn about the modules RW-630 and RW-54, its working and connections.
@@ -78,9 +87,13 @@ OUTPUT:
 
 
 
+
+
 RESOURCES:
   Reference Project link: https://how2electronics.com/433mhz-rf-module-works-interfacing-arduino/#Code_Explanation
   For Arduino Code: https://www.arduino.cc/reference/en/
+
+
 
 
 
