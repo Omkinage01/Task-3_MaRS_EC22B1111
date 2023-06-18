@@ -71,10 +71,10 @@ E) If the code is not working or the connections then refer to another reference
 OUTPUT:
 
   Case 1: Tranmitter digital connection is connected:
-  ![alt text](https://drive.google.com/file/d/1tAx7b4UiFuhAqWQZ-JPxn9C8knqCvtcS/view?usp=drive_link)
+  ![alt text](https://drive.google.com/file/d/1tAx7b4UiFuhAqWQZ-JPxn9C8knqCvtcS/view?usp=sharing)
 
   Case 2: Tranmitter digital connection is disconnected:
-  ![alt text](https://drive.google.com/file/d/1THdyal7UojMQ-fjMdAkDn78Vub1j5a73/view?usp=drive_link)
+  ![alt text](https://drive.google.com/file/d/1THdyal7UojMQ-fjMdAkDn78Vub1j5a73/view?usp=sharing)
 
 
 
