@@ -1,31 +1,36 @@
-//RECEIVER
+//RECIEVER TEMP
 
-#include <VirtualWire.h>
-//const int ledPin = 9;
-const int datain = 12;
+
+#include <RH_ASK.h> // Include RadioHead Amplitude Shift Keying Library
+#include <SPI.h> // Include dependant SPI Library
+ 
+// Create Amplitude Shift Keying Object
+RH_ASK rf_driver;
+int ledPin=12;
+
 void setup()
 {
-    Serial.begin(9600);
-    vw_set_ptt_inverted(true);
-    vw_set_rx_pin(datain);
-    vw_setup(2000);
-    //pinMode(ledPin, OUTPUT);
-    vw_rx_start();
+  pinMode(ledPin, 12);
+  // Initialize ASK Object
+  rf_driver.init();
+  // Setup Serial Monitor
+  Serial.begin(9600);
 }
-    void loop()
-{
-    uint8_t buf[VW_MAX_MESSAGE_LEN];
-    uint8_t buflen = VW_MAX_MESSAGE_LEN; 
  
-    if (vw_get_message(buf, &buflen))
-    {
-      if(buf[0]=='1')
-      {  
-       Serial.println(" Message Received ");
-       //digitalWrite(ledPin,HIGH);
-      }       
-    }
-
-    Serial.println(" --- ");
-    //digitalWrite(ledPin,LOW);
-}
+void loop()
+{
+  // Set buffer to size of expected message
+  uint8_t buf[11];
+  uint8_t buflen = sizeof(buf);
+  // Check if received packet is correct size
+  if (rf_driver.recv(buf, &buflen))
+  {
+    // Message received with valid che-cksum
+    Serial.print("Message Received: ");
+    Serial.println((char*)buf);
+    digitalWrite(ledPin, HIGH);
+  }
+  if((char*)buf=='\0')
+  {
+     digitalWrite(ledPin, LOW);
+  }
