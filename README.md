@@ -15,6 +15,7 @@ PSEUDO CODE:-
 
 A)*RECEIVER*:
 '''
+{
    1)//Defining Libraries:
      RH_ASK.h & SPI.h
    2)//Declaring Variables:
@@ -36,6 +37,7 @@ A)*RECEIVER*:
       {
           digitalWrite(ledPin, LOW);
       }
+}
 '''
 
 B)*TRANSMITTER*:
