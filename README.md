@@ -14,7 +14,7 @@ This is a Arduino Project for Transmitter-Receiver using a RW-630 as a Transmitt
 PSEUDO CODE:-
 
 A)*RECEIVER*:
-
+'''
    1)//Defining Libraries:
      RH_ASK.h & SPI.h
    2)//Declaring Variables:
@@ -36,9 +36,10 @@ A)*RECEIVER*:
       {
           digitalWrite(ledPin, LOW);
       }
+'''
 
 B)*TRANSMITTER*:
-
+'''
    1)//Defining Libraries:
      RH_ASK.h & SPI.h
    2)//Declaring Variables:
@@ -55,7 +56,7 @@ B)*TRANSMITTER*:
            Serial.println("Sent");
           }
       }
-
+'''
 *The Actual Codes for transmitter and receiver are provided in another branch*
 
 
