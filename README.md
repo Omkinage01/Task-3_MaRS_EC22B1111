@@ -14,17 +14,19 @@ This is a Arduino Project for Transmitter-Receiver using a RW-630 as a Transmitt
 PSEUDO CODE:-
 
 A)*RECEIVER*:
-'''
-{
+
    1)//Defining Libraries:
      RH_ASK.h & SPI.h
+     
    2)//Declaring Variables:
      RH_ASK rf_driver, ledPin
+   
    3)void setup()
      a)pinMode(ledPin,pin connection);
      b)//Initialize ASK object:
        rf_driver.init();
      c)Serial.begin(9600)
+   
    4)void loop()
      a)setting buffer size to expected mssg
      b) if(message received?)
@@ -37,19 +39,21 @@ A)*RECEIVER*:
       {
           digitalWrite(ledPin, LOW);
       }
-}
-'''
+
 
 B)*TRANSMITTER*:
-'''
+
    1)//Defining Libraries:
      RH_ASK.h & SPI.h
+   
    2)//Declaring Variables:
      RH_ASK rf_driver, ledPin
+   
    3)void setup()
      a)//Initialize ASK object:
        rf_driver.init();
      b)Serial.begin(9600)
+   
    4)void loop()
      a)//declaring and initialising the message to be sent:
          const char *msg = "Hello Word";
@@ -58,7 +62,7 @@ B)*TRANSMITTER*:
            Serial.println("Sent");
           }
       }
-'''
+
 *The Actual Codes for transmitter and receiver are provided in another branch*
 
 
